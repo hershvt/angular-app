@@ -1,0 +1,23 @@
+<div class="card">
+    <div class="card-header">
+        Create your Task
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <app-task (taskCreated)="onTaskEmitted($event)"></app-task>
+            </div>
+            <div class="col-md-8">
+                <app-tasklist [tasks]=appTasks></app-tasklist>
+            </div>
+        </div>
+    </div>
+</div>
+    
+   
+        
+
+
+
+
+

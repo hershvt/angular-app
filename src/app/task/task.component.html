@@ -1,0 +1,16 @@
+<BR><BR>
+
+<div class="form-group">
+    <label class="col-form-label col-form-label-lg" for="inputLarge">Time</label>
+    <input class="form-control form-control-lg" type="text"  [(ngModel)]="time" placeholder="Enter Time" id="inputLarge">
+  </div>
+  <BR>
+    <div class="form-group">
+        <label for="exampleTextarea"  >Content</label>
+        <textarea class="form-control" id="exampleTextarea" rows="3" [(ngModel)]="content" (ngModelChange)="content = $event.toUpperCase()"></textarea>
+      </div>
+    
+
+<button type="button" class="btn btn-primary" (click)="onTaskSubmit()">Add To Manager</button>
+{{time}} -- {{content | uppercase}}
+
